@@ -1,14 +1,16 @@
 import { Location } from "../constants/location-api";
-// import { SunInfo } from "../constants/sunrise-api";
 import { Info } from "../constants/otherapi";
 import Search from "../components/Search";
+import Buttons from "../components/Buttons";
 import { useState } from "react";
 
 function Home () {
 
 const [city, setCity] = useState('');
-const [latitude, setLatitude] = useState('');
-const [longitude, setLongitude] = useState('');
+// const [latitude, setLatitude] = useState('');
+// const [longitude, setLongitude] = useState('');
+const [sunriseTime, setSunriseTime]= useState('');
+const [sunsetTime, setSunsetTime]= useState('');
 
 
 // async function getLocation () {
@@ -31,14 +33,18 @@ const [longitude, setLongitude] = useState('');
 async function getSunriseInfo () {
 
     let results = await Info(city)
-    console.log(results)
+    let sunrise = results.data.currentConditions.sunrise
+    console.log(results.data.currentConditions.sunrise)
+    setSunriseTime(sunrise)
     // let sunResults = await SunInfo(latitude, longitude)
     // console.log(sunResults.data.results.sunrise)
 }
 
 async function getSunsetInfo () {
     let results = await Info(city)
-    console.log(results)
+    let sunset = results.data.currentConditions.sunset
+    console.log(results.data.currentConditions.sunset)
+    setSunsetTime(sunset)
     // let sunResults = await SunInfo(latitude, longitude)
     // console.log(sunResults.data.results.sunset)
 }
@@ -46,13 +52,14 @@ async function getSunsetInfo () {
     return (
         <div>
             < Search city={city} setCity ={setCity} />
-            <button> Search </button>  
-            City: {city}
+           
+            {/* City: {city}
             Latitude: {latitude}
-            Longitude: {longitude}
-            <button onClick={getSunriseInfo}> SUNRISE </button>
-            <button onClick={getSunsetInfo}> SUNSET </button>
-            <button> MOONPHASE </button> 
+            Longitude: {longitude} */}
+            <Buttons sunriseButton = {getSunriseInfo} sunsetButton = {getSunsetInfo} /> 
+           
+            Sunrise: {sunriseTime}
+            Sunset: {sunsetTime}
         </div>
     )
 }
