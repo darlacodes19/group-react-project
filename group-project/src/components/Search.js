@@ -15,7 +15,7 @@ function Search (props) {
              input = "text"
              onChange= { (e) => props.setCity(e.target.value)}
             />
-    {props.city}
+   
         </div>
     )
 } 

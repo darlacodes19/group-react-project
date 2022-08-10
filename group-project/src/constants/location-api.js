@@ -7,8 +7,9 @@ import axios from "axios";
 export async function Location (city) {
     try {
 
-        const response = await axios.get(`https://api.opencagedata.com/geocode/v1/google-v3-json?address=atlanta&pretty=1&key=d910c349a23e4539979f6116f5eb207a`)
-        console.log(response)
+        const locationResponse = await axios.get(`http://api.opencagedata.com/geocode/v1/google-v3-json?address=${city}&pretty=1&key=d910c349a23e4539979f6116f5eb207a`)
+        // console.log(locationResponse ,'this is the try statement')
+        return locationResponse
 
     }catch(error) {
         console.log(error)
