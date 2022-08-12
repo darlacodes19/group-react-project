@@ -6,7 +6,7 @@ function Buttons (props) {
         <div> 
             <button onClick={props.sunriseButton}> SUNRISE </button>
             <button onClick={props.sunsetButton}> SUNSET </button>
-            <button> MOONPHASE </button> 
+            <button onClick={props.moonphaseButton}> MOONPHASE </button> 
         </div> 
     )
 }

@@ -1,7 +1,7 @@
-import { Location } from "../constants/location-api";
 import { Info } from "../constants/otherapi";
 import Search from "../components/Search";
 import Buttons from "../components/Buttons";
+import formatMoonphase from "../helpers/moonPhase";
 import { useState } from "react";
 
 function Home () {
@@ -11,9 +11,10 @@ const [city, setCity] = useState('');
 // const [longitude, setLongitude] = useState('');
 const [sunriseTime, setSunriseTime]= useState('');
 const [sunsetTime, setSunsetTime]= useState('');
+const [moonphase, setMoonphase] = useState('')
 
 
-// async function getLocation () {
+// async function getLocation () { 
     
 //     console.log(city)
 //    try {   
@@ -49,6 +50,13 @@ async function getSunsetInfo () {
     // console.log(sunResults.data.results.sunset)
 }
 
+async function getMoonphaseInfo () {
+    let results = await Info(city)
+    let moonphases = results.data.currentConditions.moonphase
+    setMoonphase(moonphases)
+    console.log(moonphase)
+}
+
     return (
         <div>
             < Search city={city} setCity ={setCity} />
@@ -56,10 +64,11 @@ async function getSunsetInfo () {
             {/* City: {city}
             Latitude: {latitude}
             Longitude: {longitude} */}
-            <Buttons sunriseButton = {getSunriseInfo} sunsetButton = {getSunsetInfo} /> 
+            <Buttons sunriseButton = {getSunriseInfo} sunsetButton = {getSunsetInfo} moonphaseButton = {getMoonphaseInfo}/> 
            
             Sunrise: {sunriseTime}
             Sunset: {sunsetTime}
+            Moonphase: {moonphase && formatMoonphase(moonphase)}
         </div>
     )
 }
