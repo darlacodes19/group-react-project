@@ -36,3 +36,21 @@
     font-weight: bold;
     
 }
+
+.moon-phase-image {
+    width:300px;
+    height: auto;
+    padding: 10px;
+}
+
+.moon-phase-card {
+    border: 5px solid black;
+    width: 400px;
+    height: 400px;
+    align-items: center;
+    margin: 0;
+}
+
+.moon-phase-title {
+    margin:0;
+}

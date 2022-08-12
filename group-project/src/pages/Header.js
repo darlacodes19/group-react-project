@@ -5,7 +5,7 @@ import {NavLink, Route, Routes} from "react-router-dom"
 import Home from "./Home"
 import About from "./About";
 import NotFound from "./NotFound";
-import Advice from "../constants/advice";
+// import Advice from "../constants/advice";
 
 // NavLink: a component for setting the URL and
 // providing navigation between components
@@ -46,7 +46,7 @@ function Header() {
     <Route path="/" element={<Home />} />
     <Route path="/about" element={<About />} />
     <Route path="*" element={<NotFound />} />
-    <Route path="/advice" element={<Advice />} />
+    {/* <Route path="/advice" element={<Advice />} /> */}
     </Routes>
     </div>
   );
