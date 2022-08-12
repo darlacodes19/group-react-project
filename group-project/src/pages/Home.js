@@ -59,6 +59,7 @@ async function getMoonphaseInfo () {
 
     return (
         <div>
+            <h1> Home </h1>
             < Search city={city} setCity ={setCity} />
            
             {/* City: {city}

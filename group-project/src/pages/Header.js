@@ -1,4 +1,6 @@
-import { NavLink, Route, Routes } from "react-router-dom";
+// import { NavLink, Route, Routes } from "react-router-dom";
+
+import {NavLink, Route, Routes} from "react-router-dom"
 
 import Home from "./Home"
 import About from "./About";
@@ -35,7 +37,7 @@ function Header() {
         </li>
       </ul>
       </nav>
-     <Routes>
+      <Routes>
     <Route path="/" element={<Home />} />
     <Route path="/about" element={<About />} />
     <Route path="*" element={<NotFound />} />
