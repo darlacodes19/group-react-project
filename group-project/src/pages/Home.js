@@ -2,6 +2,8 @@ import { Info } from "../constants/otherapi";
 import Search from "../components/Search";
 import Buttons from "../components/Buttons";
 import formatMoonphase from "../helpers/moonPhase";
+import SunriseCard from "../components/SunriseCard";
+import SunsetCard from "../components/SunsetCard";
 import { useState } from "react";
 
 function Home () {
@@ -66,12 +68,15 @@ async function getMoonphaseInfo () {
             Latitude: {latitude}
             Longitude: {longitude} */}
             <Buttons sunriseButton = {getSunriseInfo} sunsetButton = {getSunsetInfo} moonphaseButton = {getMoonphaseInfo}/> 
+
+            <SunriseCard  sunriseTime = {sunriseTime}/> 
+           <SunsetCard  sunsetTime= {sunsetTime}/> 
            
-            Sunrise: {sunriseTime}
-            Sunset: {sunsetTime}
+           
            {moonphase && formatMoonphase(moonphase)}
         </div>
     )
 }
+
 
 export default Home 
