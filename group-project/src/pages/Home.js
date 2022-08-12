@@ -69,7 +69,7 @@ async function getMoonphaseInfo () {
            
             Sunrise: {sunriseTime}
             Sunset: {sunsetTime}
-            Moonphase: {moonphase && formatMoonphase(moonphase)}
+           {moonphase && formatMoonphase(moonphase)}
         </div>
     )
 }
