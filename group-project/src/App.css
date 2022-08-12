@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height:60px;
+    box-shadow: 0 1px 3px rgba(15, 15, 15, 0.15);
+    background-color:#FFF6FF(272, 61%, 94%);
+    margin-top: 0%;
+    padding: 8px 12px;  
+    box-shadow: 0 1px 3px rgba(15, 15, 15, 0.15);
+}
+
+.heyon-ul1{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-left: 0%;
+    margin-left: 3rem;
+    align-items: center;
+    color: darkslategray;
+      }
+.heyon-ul1 li{
+    padding:8px 12px;
+    font-family: Montserrat,sans-serif;
+    color: darkslategray;
+    opacity: 90%;
+    margin-left: 5rem;
+    margin-right: 3rem;
+     font-size: 130%;
+     list-style: none; 
+}
+.heyon-ul1 li:hover{
+    font-weight: bold;
+    
+}
