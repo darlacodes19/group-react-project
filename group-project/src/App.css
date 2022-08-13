@@ -36,8 +36,8 @@ body{
 }
 .heyon-ul1 li:hover{
     font-weight: bold;
-    
-}
+    font-size: 132%;
+    }
 .logo{
     margin-left: 2rem;
     margin-top: 0.5rem;
@@ -85,7 +85,50 @@ body{
  margin-top:1.5rem;
  margin-left:1.5rem;
 }
+@media only screen and (max-width: 668px) {
+    body{
+        margin:0%;
+    }
+    .navbar{
 
+        position: fixed;
+        flex-direction: column;
+        background-color:#FFF6FF(272, 61%, 94%);
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: center;
+        transition: 0.3s;
+        display: flex;
+        top: 0%;
+        height:10rem;
+       font-size: small;
+        
+
+    }
+
+   .homeBtn{
+    margin-right: 1.5rem;
+   }
+   .logo{
+    margin-left: 1.5rem;
+    margin-top: 0.5rem;
+    max-width: 9rem;
+    max-height: 3.5rem;
+    
+   }
+    .heyon-ul1 {
+        top:0%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 0%;
+    }
+
+    .Header{
+
+    margin-top: 15rem;
+    }
+}
 
 
 
