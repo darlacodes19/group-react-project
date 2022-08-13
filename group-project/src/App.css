@@ -86,9 +86,32 @@ body{
  margin-left:1.5rem;
 }
 
+.advice-title{
+    display: flex;
+    justify-content: center;
+}
 
+.get-advice{
+    display: flex;
+    justify-content: center; 
+    font-size: 1.5rem;  
+}
 
+.advice-author{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+}
 
+.advice-btn{
+    display: flex;
+    justify-content: center;
+}
+
+#advicebtn{
+    font-size: 1.2rem;
+
+}
 
 
 
