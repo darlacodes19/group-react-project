@@ -18,6 +18,7 @@ function Header() {
 
     <div className="Header">
       <nav className="navbar">
+        <div className="bar"><p></p></div>
         <div className="homeBtn">
           <NavLink style={{ textDecoration: "none" }} to={"/"}>
            <img src={require('../images/logo1.jpg')} alt="logo" className="logo"/>
