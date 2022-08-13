@@ -1,10 +1,11 @@
 // import { NavLink, Route, Routes } from "react-router-dom";
-
+import Footer from "./Footer";
 import {NavLink, Route, Routes} from "react-router-dom"
-
+import Advice from "../constants/advice";
 import Home from "./Home"
 import About from "./About";
 import NotFound from "./NotFound";
+
 // import Advice from "../constants/advice";
 
 // NavLink: a component for setting the URL and
@@ -19,7 +20,7 @@ function Header() {
       <nav className="navbar">
         <div className="homeBtn">
           <NavLink style={{ textDecoration: "none" }} to={"/"}>
-            LOGO
+           <img src={require('../images/logo1.jpg')} alt="logo" className="logo"/>
           </NavLink>
         </div>
       
@@ -42,13 +43,16 @@ function Header() {
         </li>
       </ul>
       </nav>
+      
       <Routes>
     <Route path="/" element={<Home />} />
     <Route path="/about" element={<About />} />
     <Route path="*" element={<NotFound />} />
-    {/* <Route path="/advice" element={<Advice />} /> */}
+    <Route path="/advice" element={<Advice />} />
     </Routes>
+   <Footer/>
     </div>
+    
   );
 }
 

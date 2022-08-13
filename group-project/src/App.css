@@ -1,15 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-
+body{
+    margin: 0%;
+}
 .navbar{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height:60px;
+    height:85px;
     box-shadow: 0 1px 3px rgba(15, 15, 15, 0.15);
     background-color:#FFF6FF(272, 61%, 94%);
     margin-top: 0%;
     padding: 8px 12px;  
-    box-shadow: 0 1px 3px rgba(15, 15, 15, 0.15);
+    box-shadow: 0 1px 3px #0f0f0f26;
+  
 }
 
 .heyon-ul1{
@@ -20,21 +23,26 @@
     padding-left: 0%;
     margin-left: 3rem;
     align-items: center;
-    color: darkslategray;
+    
       }
 .heyon-ul1 li{
     padding:8px 12px;
     font-family: Montserrat,sans-serif;
-    color: darkslategray;
     opacity: 90%;
-    margin-left: 5rem;
+    margin-left: 3rem;
     margin-right: 3rem;
-     font-size: 130%;
-     list-style: none; 
+    font-size: 130%;
+    list-style: none; 
 }
 .heyon-ul1 li:hover{
     font-weight: bold;
     
+}
+.logo{
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+    max-width: 15rem;
+    max-height: 6rem;
 }
 
 .moon-phase-image {
@@ -58,3 +66,44 @@
 .sun-image {
     width: 200px;
 }
+
+
+.footer{
+    font-family: Montserrat,sans-serif;
+    color:aliceblue;
+    height: 60px;
+    background-color:#1B3D2F;
+    position:fixed;
+    left:0;
+    width:100%;
+    bottom:0;
+    
+    
+}
+.footer p{
+
+ margin-top:1.5rem;
+ margin-left:1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
