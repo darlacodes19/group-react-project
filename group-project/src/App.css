@@ -2,6 +2,8 @@
 body{
     margin: 0%;
 }
+
+
 .navbar{
     display: flex;
     align-items: center;
@@ -86,6 +88,22 @@ body{
  margin-left:1.5rem;
 }
 
+/* .home-page {
+    background-color: blue;
+} */
+
+.sun-info-card {
+    background: linear-gradient(0deg, rgba(223,132,20,1) 17%, rgba(195,45,253,1) 56%);
+    height:500px;
+}
+
+.button-container {
+    background-color: blue;
+}
+
+.sun-rise-background {
+    background: linear-gradient(0deg, rgba(223,132,20,1) 17%, rgba(195,45,253,1) 56%);
+}
 
 
 
