@@ -16,7 +16,9 @@ const [sunsetTime, setSunsetTime]= useState('');
 const [moonphase, setMoonphase] = useState('')
 const [fisrtIsActive, setFirstIsActive] = useState(false)
 const [secondIsActive, setSecondIsActive] = useState(false)
-const [thirdIsActive, setThirdIsActive] = useState(false)
+const [thirdIsActive, setThirdIsActive] = useState(false);
+const [style, setStyle] = useState('');
+
 
 
 // async function getLocation () { 
@@ -42,6 +44,7 @@ async function getSunriseInfo () {
     let sunrise = results.data.currentConditions.sunrise
     console.log(results.data.currentConditions.sunrise)
     setSunriseTime(sunrise)
+    setStyle('sun-rise-background')
     setFirstIsActive(true)
     setSecondIsActive(false)
     setThirdIsActive(false)
@@ -73,14 +76,17 @@ async function getMoonphaseInfo () {
 }
 
     return (
-        <div>
+        <div class-name="home-page">
             
-            < Search city={city} setCity ={setCity} />
+            < Search city={city} setCity ={setCity} style ={style} />
            
             {/* City: {city}
             Latitude: {latitude}
             Longitude: {longitude} */}
-            <Buttons sunriseButton = {getSunriseInfo} sunsetButton = {getSunsetInfo} moonphaseButton = {getMoonphaseInfo}/> 
+            <Buttons sunriseButton = {getSunriseInfo} sunsetButton = {getSunsetInfo} moonphaseButton = {getMoonphaseInfo}
+            style ={style}
+            
+            /> 
 
            { getSunriseInfo && fisrtIsActive && <SunriseCard  sunriseTime = {sunriseTime}/> }
             
