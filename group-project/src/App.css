@@ -84,7 +84,7 @@ body{
 .footer{
     font-family: Montserrat,sans-serif;
     color:aliceblue;
-    height: 60px;
+    height: 40px;
     /* background-image: linear-gradient(to right top, #6b6bd1, #006ebe, #00699c, #005e74, #005152, #165950, #2a604c, #3d6648, #5e8658, #85a767, #b2c876, #e5e885); */
     box-shadow: 0 1px 3px #0f0f0f26;
     /* background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1); */
@@ -209,6 +209,7 @@ body{
     width:300px;
     background-color: salmon;
     font-weight: bold;
+    font-size: 1.2rem;
     
    
 }
