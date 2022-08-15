@@ -3,7 +3,7 @@ import Footer from "./Footer";
 import {NavLink, Route, Routes} from "react-router-dom"
 import Advice from "../constants/advice";
 import Home from "./Home"
-import About from "./About";
+
 import NotFound from "./NotFound";
 
 // import Advice from "../constants/advice";
@@ -33,11 +33,6 @@ function Header() {
           </NavLink>
         </li>
         <li>
-          <NavLink style={{ textDecoration: "none" }} to={"/about"}>
-            ABOUT
-          </NavLink>
-        </li>
-         <li>
          <NavLink style={{ textDecoration: "none" }} to={"/advice"}>
            DAILY ADVICE
           </NavLink>
@@ -47,7 +42,6 @@ function Header() {
       
       <Routes>
     <Route path="/" element={<Home />} />
-    <Route path="/about" element={<About />} />
     <Route path="*" element={<NotFound />} />
     <Route path="/advice" element={<Advice />} />
     </Routes>
