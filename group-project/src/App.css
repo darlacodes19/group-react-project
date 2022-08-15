@@ -3,6 +3,8 @@ body{
     margin: 0%;
     height: 100%;
 }
+
+
 .navbar{
     display: flex;
     align-items: center;
@@ -49,17 +51,20 @@ body{
 }
 
 .moon-phase-image {
-    width:300px;
+    width:200px;
     height: auto;
     padding: 10px;
 }
 
 .moon-phase-card {
-    border: 5px solid black;
     width: 400px;
     height: 400px;
     align-items: center;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
 }
 
 .moon-phase-title {
@@ -67,7 +72,11 @@ body{
 }
 
 .sun-image {
-    width: 200px;
+    width: 300px;
+}
+
+.sun-rise-background {
+    background: linear-gradient(0deg, rgba(223,132,20,1) 17%, rgba(195,45,253,1) 56%);
 }
 
 
@@ -91,6 +100,7 @@ body{
  margin-top:1.5rem;
  margin-left:1.5rem;
 }
+
 @media only screen and (max-width: 668px) {
     body{
         margin:0%;
@@ -143,6 +153,79 @@ body{
     margin-top: 12rem;
     }
 }
+
+
+.advice-title{
+    display: flex;
+    justify-content: center;
+}
+
+.get-advice{
+    display: flex;
+    justify-content: center; 
+    font-size: 1.5rem;  
+}
+
+.advice-author{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.advice-btn{
+    display: flex;
+    justify-content: center;
+}
+
+#advicebtn{
+    font-size: 1.2rem;
+
+}
+
+.main-components{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(0deg, rgba(223,132,20,1) 17%, rgba(195,45,253,1) 56%);
+ 
+}
+
+.city-search {
+    border-radius: 30px;
+    width: 350px;
+    height: 50px;
+    text-indent: 10px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.button {
+    margin: 15px;
+    padding: 20px;
+    border-radius: 30px;
+    width:300px;
+    background-color: salmon;
+    font-weight: bold;
+    
+   
+}
+.sun-info-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    
+}
+
+.moon-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
 
 
 

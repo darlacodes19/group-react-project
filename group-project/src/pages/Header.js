@@ -1,4 +1,4 @@
-// import { NavLink, Route, Routes } from "react-router-dom";
+
 import Footer from "./Footer";
 import {NavLink, Route, Routes} from "react-router-dom"
 import Advice from "../constants/advice";
@@ -32,7 +32,7 @@ function Header() {
             HOME
           </NavLink>
         </li>
-        <li>
+
          <NavLink style={{ textDecoration: "none" }} to={"/advice"}>
            DAILY ADVICE
           </NavLink>
