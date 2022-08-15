@@ -1,4 +1,4 @@
-# group-react-project
+# Daily Outlook
 
 **Title**: The title of our app is Daily Outlook.
 
