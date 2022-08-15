@@ -19,7 +19,9 @@
 **API Documentation**
 
 Sunrise/Sunset: https://sunrise-sunset.org/api 
+
 Moon and Moon Phase: https://dev.qweather.com/en/docs/api/astronomy/moon-and-moon-phase/ 
+
 Quotes Free: https://type.fit/api/quotes (Did not have official documentation, only a Github repo and a Demo React Application 
 (Github repo: https://github.com/ssokurenko/quotes-react-app, 
 Demo React Application: https://quotes-react.netlify.app/) 
