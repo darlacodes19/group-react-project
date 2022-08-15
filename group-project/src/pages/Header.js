@@ -1,8 +1,9 @@
-// import { NavLink, Route, Routes } from "react-router-dom";
+
 import Footer from "./Footer";
 import {NavLink, Route, Routes} from "react-router-dom"
 import Advice from "../constants/advice";
 import Home from "./Home"
+
 import NotFound from "./NotFound";
 
 // import Advice from "../constants/advice";
@@ -17,6 +18,7 @@ function Header() {
 
     <div className="Header">
       <nav className="navbar">
+        <div className="bar"><p></p></div>
         <div className="homeBtn">
           <NavLink style={{ textDecoration: "none" }} to={"/"}>
            <img src={require('../images/logo1.jpg')} alt="logo" className="logo"/>
@@ -30,7 +32,7 @@ function Header() {
             HOME
           </NavLink>
         </li>
-         <li>
+
          <NavLink style={{ textDecoration: "none" }} to={"/advice"}>
            DAILY ADVICE
           </NavLink>
