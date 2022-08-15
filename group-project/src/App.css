@@ -189,6 +189,7 @@ body{
     align-items: center;
     justify-content: center;
     background: linear-gradient(0deg, rgba(223,132,20,1) 17%, rgba(195,45,253,1) 56%);
+  
  
 }
 
@@ -224,9 +225,14 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: blue;
+    background-image: url('./images/stars.jpg');
+    color:white;
 }
 
+.advice-div {
+    background: linear-gradient(0deg, rgba(223,132,20,1) 17%, rgba(195,45,253,1) 56%);
+    height:500px;
+}
 
 
 

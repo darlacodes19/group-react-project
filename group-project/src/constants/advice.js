@@ -14,14 +14,14 @@ const Advice = () => {
     }
 
     return (
-        <div>
+        <div className='advice-div'>
             {/* <div className ="getquotes"> */}
                 <h1 className = "advice-title">Click for Daily Wisdom</h1>
                 <p className="get-advice">Advice for Today: {quotes.text}</p>
                 <p className="advice-author">- {quotes.author}</p>
                 <div className = 'advice-btn'>
                 
-                <button type="button" id="advicebtn" onClick={getQuote}>Click for Good Advice</button>
+                <button type="button" id="advicebtn" onClick={getQuote} className="button">Click for Good Advice</button>
             </div>
         </div>
     )
