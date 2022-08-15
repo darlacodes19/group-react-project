@@ -64,6 +64,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    
    
 }
 
@@ -75,9 +76,9 @@ body{
     width: 300px;
 }
 
-.sun-rise-background {
+/* .sun-rise-background {
     background: linear-gradient(0deg, rgba(223,132,20,1) 17%, rgba(195,45,253,1) 56%);
-}
+} */
 
 
 .footer{
@@ -214,6 +215,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color:  rgba(223,132,20,1);
    
     
 }
@@ -222,6 +224,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: blue;
 }
 
 

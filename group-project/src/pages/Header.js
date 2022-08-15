@@ -32,9 +32,9 @@ function Header() {
             HOME
           </NavLink>
         </li>
-
+      <li>
          <NavLink style={{ textDecoration: "none" }} to={"/advice"}>
-           DAILY ADVICE
+           DAILY ADVICE 
           </NavLink>
         </li>
       </ul>
