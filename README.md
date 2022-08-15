@@ -1,7 +1,5 @@
 # Daily Outlook
 
-**Title**: The title of our app is Daily Outlook.
-
 **Description**: Our app, ‘Daily Outlook’ is an app created using the React library. The purpose of the app is to allow users to view what time the sun will rise and set depending on their location, plus the option to view an inspirational quote and the current phase of the moon. The main goal of this app is to give users a space to access information with ease. For a variety of reasons, there are plenty of people that regularly need to know what time the sun will come up/go down, and what the current moon phase is. In addition, many people find it beneficial to start their day with a motivational quote. On a daily basis, our app gives users a quick, convenient, and visually appealing  way to access each of those things.
 
 
