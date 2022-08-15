@@ -3,7 +3,7 @@ function SunriseCard (props) {
     return (
         <div className="sun-info-card"> 
             <img src={require("../images/sunrise.png" )} alt="sunrise" className="sun-image"/> 
-            <span className="sun-time">  {formatTime(props.sunriseTime)} </span>
+            <h4 className="sun-time">  {formatTime(props.sunriseTime)} </h4>
             
         </div> 
     )

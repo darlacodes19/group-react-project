@@ -77,23 +77,28 @@ async function getMoonphaseInfo () {
 
     return (
         <div class-name="home-page">
-            
+            <div className="main-components" > 
             < Search city={city} setCity ={setCity} style ={style} />
            
             {/* City: {city}
             Latitude: {latitude}
             Longitude: {longitude} */}
             <Buttons sunriseButton = {getSunriseInfo} sunsetButton = {getSunsetInfo} moonphaseButton = {getMoonphaseInfo}
-            style ={style}
+            style ={style} className="buttons"
             
             /> 
 
+            </div>
+        
+        <div className="sin-info-card"> 
+
            { getSunriseInfo && fisrtIsActive && <SunriseCard  sunriseTime = {sunriseTime}/> }
-            
+        </div> 
             { sunsetTime && secondIsActive && <SunsetCard  sunsetTime= {sunsetTime}/> }
            
-           
+          <div className="moon-info-container">  
            {moonphase && thirdIsActive &&formatMoonphase(moonphase)}
+        </div> 
         </div>
     )
 }

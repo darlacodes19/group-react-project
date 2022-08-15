@@ -5,9 +5,9 @@ function Buttons (props) {
 
     return (
         <div className={props.style}> 
-            <button onClick={props.sunriseButton}> SUNRISE </button>
-            <button onClick={props.sunsetButton}> SUNSET </button>
-            <button onClick={props.moonphaseButton}> MOONPHASE </button> 
+            <button onClick={props.sunriseButton} className="button"> SUNRISE </button>
+            <button onClick={props.sunsetButton}className="button"> SUNSET </button>
+            <button onClick={props.moonphaseButton} className="button"> MOONPHASE </button> 
         </div> 
     )
 }
